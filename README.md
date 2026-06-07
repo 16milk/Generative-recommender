@@ -9,7 +9,8 @@ generative-recommender/
 ├── README.md                                   # 项目说明（本文件）
 └── docs/
     ├── 01-生成式推荐架构-背景与技术综述.md       # 背景知识 / 技术栈 / 前沿进展 / 未来展望
-    └── 02-Meta-generative-recommenders-代码框架梳理.md  # 官方 HSTU 仓库代码框架拆解 + 复刻工作清单
+    ├── 02-Meta-generative-recommenders-代码框架梳理.md  # 官方 HSTU 仓库代码框架拆解 + 复刻工作清单
+    └── 03-OneRec-与-OneRec-V2-论文梳理.md         # 快手 OneRec / OneRec-V2 论文方法与演进
 ```
 
 ## 从这里开始
@@ -29,6 +30,12 @@ generative-recommender/
 - 顶层目录结构与各模块职责
 - 端到端数据流与训练流程
 - 复刻一个类似项目需要分阶段完成的「工作清单」
+
+如果想了解「语义 ID + encoder/decoder 生成」这条工业路线，读 [`docs/03-OneRec-与-OneRec-V2-论文梳理.md`](docs/03-OneRec-与-OneRec-V2-论文梳理.md)，它梳理了快手 OneRec 系列：
+
+- OneRec（V1）：RQ-Kmeans 语义 ID + session-wise 生成 + Encoder-Decoder/MoE + DPO 偏好对齐
+- OneRec-V2：Lazy Decoder-Only 架构（算力 −94%、可 scale 到 8B）+ 真实用户反馈对齐（GBPO）
+- V1 → V2 的演进逻辑、线上效果与对自研系统的启示
 
 ## 路线图（规划中）
 
