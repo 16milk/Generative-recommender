@@ -8,7 +8,8 @@
 generative-recommender/
 ├── README.md                                   # 项目说明（本文件）
 └── docs/
-    └── 01-生成式推荐架构-背景与技术综述.md       # 背景知识 / 技术栈 / 前沿进展 / 未来展望
+    ├── 01-生成式推荐架构-背景与技术综述.md       # 背景知识 / 技术栈 / 前沿进展 / 未来展望
+    └── 02-Meta-generative-recommenders-代码框架梳理.md  # 官方 HSTU 仓库代码框架拆解 + 复刻工作清单
 ```
 
 ## 从这里开始
@@ -21,6 +22,13 @@ generative-recommender/
 - 完整技术栈（算法 / 框架 / 数据 / 服务 / 评估）
 - 2024–2026 的前沿进展（TIGER、HSTU、OneRec / OneRec-V2 等）
 - 挑战与未来展望
+
+接着读 [`docs/02-Meta-generative-recommenders-代码框架梳理.md`](docs/02-Meta-generative-recommenders-代码框架梳理.md)，它把 Meta 官方 HSTU 仓库 [`meta-recsys/generative-recommenders`](https://github.com/meta-recsys/generative-recommenders) 的代码框架逐层拆解：
+
+- 仓库的两条主线（学术复现线 `research/` vs 生产线 `dlrm_v3/`）
+- 顶层目录结构与各模块职责
+- 端到端数据流与训练流程
+- 复刻一个类似项目需要分阶段完成的「工作清单」
 
 ## 路线图（规划中）
 
