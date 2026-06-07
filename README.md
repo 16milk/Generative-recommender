@@ -10,7 +10,9 @@ generative-recommender/
 └── docs/
     ├── 01-生成式推荐架构-背景与技术综述.md       # 背景知识 / 技术栈 / 前沿进展 / 未来展望
     ├── 02-Meta-generative-recommenders-代码框架梳理.md  # 官方 HSTU 仓库代码框架拆解 + 复刻工作清单
-    └── 03-OneRec-与-OneRec-V2-论文梳理.md         # 快手 OneRec / OneRec-V2 论文方法与演进
+    ├── 03-OneRec-与-OneRec-V2-论文梳理.md         # 快手 OneRec / OneRec-V2 论文方法与演进
+    ├── 04-剪映生成式召回启发的GR框架设计.md       # 结合内部实践沉淀的可落地 GR 框架设计
+    └── generative-recommender-architecture.html   # 精致 HTML 架构图与端到端链路展示
 ```
 
 ## 从这里开始
@@ -36,6 +38,8 @@ generative-recommender/
 - OneRec（V1）：RQ-Kmeans 语义 ID + session-wise 生成 + Encoder-Decoder/MoE + DPO 偏好对齐
 - OneRec-V2：Lazy Decoder-Only 架构（算力 −94%、可 scale 到 8B）+ 真实用户反馈对齐（GBPO）
 - V1 → V2 的演进逻辑、线上效果与对自研系统的启示
+
+最后读 [`docs/04-剪映生成式召回启发的GR框架设计.md`](docs/04-剪映生成式召回启发的GR框架设计.md)，它结合剪映/CapCut 生成式召回实践，把本项目需要建设的 GR 框架拆成数据、Tokenizer、模型、训练、Serving、监控六层，并配套一个可直接在浏览器打开的精致 HTML 架构图：[`docs/generative-recommender-architecture.html`](docs/generative-recommender-architecture.html)。
 
 ## 路线图（规划中）
 
